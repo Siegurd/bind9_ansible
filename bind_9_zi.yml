@@ -1,0 +1,14 @@
+#!/usr/local/bin/ansible-playbook -CD
+---
+- name: inf-test01-ovt bind9 test
+  hosts:
+    - inf-test01-ovh
+  become: true
+  gather_facts: True
+  any_errors_fatal: True
+  force_handlers: True
+  vars:
+    template: "{{ role_path }}/templates"
+  roles:
+    - role: bind_9_role
+
