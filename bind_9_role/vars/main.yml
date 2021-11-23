@@ -1,7 +1,0 @@
----
-
-# Default values
-
-# path to bind9 files (keys, zones, temp zone data)
-template: "{{ role_path }}/templates"
-second: "{{ role_path }}/templates"

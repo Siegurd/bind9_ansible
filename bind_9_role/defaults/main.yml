@@ -1,6 +1,0 @@
----
-
-# Default values
-
-# path to bind9 files (keys, zones, temp zone data)
-# bind9_data: "{{ playbook_dir }}/bind9-data"
